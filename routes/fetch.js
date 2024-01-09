@@ -6,15 +6,12 @@ router.post("/", async (req, res, next) => {
   let data;
 
   try {
-    await MySQLClient.connect();
-    data = await MySQLClient.query(await sql("INSERT_DATA"),
+    data = await MySQLClient.executeQuery(
+      await sql("INSERT_DATA"),
       [name, age, address, celular, carrier]
     );
-    console.log(data);
   } catch(err) {
     next(err);
-  } finally {
-    await MySQLClient.end();
   }
 
   return

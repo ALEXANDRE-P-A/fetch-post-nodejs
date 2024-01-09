@@ -15,4 +15,6 @@ CREATE TABLE IF NOT EXISTS example (
 
 ALTER TABLE <TABLE NAME> ADD <NEW COLUMN NAME> <TYPE INFO ex:VARCHAR(256) > AFTER <COLUMN NAME>;
 
+ALTER TABLE example ADD time DATETIME AFTER name;
+
 # ------------------ ------------------ ------------------ ------------------ #

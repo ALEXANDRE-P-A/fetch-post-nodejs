@@ -1,4 +1,4 @@
 INSERT INTO
-  example (`name`, `age`, `address`, `celular`, `carrier`)
+  example (`name`, `time`, `age`, `address`, `celular`, `carrier`)
 VALUES
-  (?, ?, ?, ?, ?)
+  (?, now(), ?, ?, ?, ?)

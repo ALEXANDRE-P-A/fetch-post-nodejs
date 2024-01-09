@@ -3,6 +3,7 @@ require("dotenv").config();
 const express = require("express");
 const PORT = process.env.PORT || 3000;
 const path = require("path");
+const favicon = require("serve-favicon");
 
 // express settings
 const app = express();
@@ -13,6 +14,7 @@ app.use(express.json());
 
 // static resources
 app.use("/public", express.static(path.join(__dirname, "/public")));
+app.use(favicon(path.join(__dirname, "/public/favicon.ico")));  
 
 // dynamic resources
 app.use("/", require("./routes/index.js"));

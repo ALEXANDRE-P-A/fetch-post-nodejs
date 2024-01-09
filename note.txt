@@ -1,3 +1,16 @@
+# ------------------- SQL create example table ------------------- #
+
+CREATE TABLE IF NOT EXISTS example (
+  id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(256) NOT NULL,
+  address VARCHAR(256),
+  age VARCHAR(256) NOT NULL,
+  celular VARCHAR(256),
+  carrier VARCHAR(256)
+);
+
+# ------------------ ------------------ ------------------ ------------------ #
+
 # ------------------- SQL ADD column and point the order ------------------- #
 
 ALTER TABLE <TABLE NAME> ADD <NEW COLUMN NAME> <TYPE INFO ex:VARCHAR(256) > AFTER <COLUMN NAME>;

@@ -17,7 +17,7 @@ router.post("/", async (req, res, next) => {
     await MySQLClient.end();
   }
 
-  res.end("Ok");
+  return
 });
 
 module.exports = router;

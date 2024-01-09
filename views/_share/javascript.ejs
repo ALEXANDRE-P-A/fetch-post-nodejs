@@ -1,0 +1,25 @@
+<script type="text/javascript">
+
+  const obj = {
+    name: "Alexandre PA",
+    age: 35,
+    address: "Tokyo",
+    celular: "iPhone 15 Pro",
+    carrier: "docomo ahamo"
+  };
+
+  const method = "POST";
+
+  const body = JSON.stringify(obj);
+
+  const headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json"
+  };
+
+  fetch("./new", {method, headers, body})
+  .then(res => res.json())
+  .then(console.log)
+  .catch(console.error);
+
+</script>

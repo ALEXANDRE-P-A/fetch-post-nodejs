@@ -1,0 +1,25 @@
+{
+  "name": "fetch-post-nodejs",
+  "version": "1.0.0",
+  "description": "fetch post nodejs training",
+  "main": "app.js",
+  "engines": {
+    "node": ">=18.18.0 <21.1.0"
+  },
+  "scripts": {
+    "build": "npm install",
+    "start": "node app.js"
+  },
+  "author": "Alexandre PA",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.56.0"
+  },
+  "dependencies": {
+    "@garafu/mysql-fileloader": "^0.0.3",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1"
+  }
+}
